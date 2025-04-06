@@ -2,8 +2,11 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-# Load the dataset
+#Carga de datos
 car_data = pd.read_csv('notebooks/vehicles_us.csv')
+
+#Título de la aplicación
+st.title('Análisis de datos de anuncios de venta de coches - KS')
 
 #Boton de histograma
 hist_button = st.checkbox('Construir histograma')
